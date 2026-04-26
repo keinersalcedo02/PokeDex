@@ -28,19 +28,31 @@
 
   &__content {
     display: grid;
-    grid-template-rows: min-content auto;
-    grid-template-columns: min-content 1fr;
-    margin: 0 15px 25px 15px;
+
+    /* 🔥 Mantiene tu idea original pero estable */
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: auto 1fr;
+
+    margin: 0 auto;
     min-height: calc(100vh - 125px);
     max-width: 1366px;
-    margin: 0 auto;
     padding: 25px 4em 4em;
+    gap: 20px;
 
     @include respond(xs, sm) {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, auto);
-      justify-content: center;
+      grid-template-rows: auto auto auto;
       padding: 4em 1em;
     }
   }
+}
+
+/* 🔧 Ajustes mínimos para estabilidad */
+app-sidenav {
+  width: 260px;
+  min-width: 260px;
+}
+
+app-pokemon-list {
+  width: 100%;
 }
