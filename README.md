@@ -91,8 +91,8 @@ Entre los cambios realizados se encuentran:
 
 ## Componentes Desarrollados
 
-- Navbar
-- Sidebar de filtros
+- Barra de navegación
+- Barra lateral de filtros
 - Tarjetas de Pokémon
 - Buscador dinámico
 - Sistema de ordenamiento
@@ -121,7 +121,7 @@ Se configuró:
 
 ---
 
-# Configuración del Workflow GitHub Actions
+# Configuración del flujo de trabajo de GitHub Actions
 
 Azure generó automáticamente un flujo de trabajo para el despliegue continuo de la aplicación.
 
