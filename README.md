@@ -1,132 +1,139 @@
 # Pokédex Angular — Sistemas Distribuidos
 
-Aplicación web desarrollada en Angular que permite consultar información de Pokémon consumiendo datos desde PokéAPI.
-
-El proyecto fue desplegado en Azure Static Web Apps utilizando integración continua con GitHub y GitHub Actions.
-
----
-
-# URL Pública
-
-https://TU-URL-AQUI.azurestaticapps.net
+Aplicación web desarrollada en Angular que consume información de Pokémon usando PokéAPI.  
+El proyecto fue desplegado en Azure Static Web Apps con integración continua utilizando GitHub y GitHub Actions.
 
 ---
 
-# Repositorio GitHub
+# Información del Proyecto
 
-https://github.com/keinersalcedo02/PokeDex
-
----
-
-# Objetivo del Proyecto
-
-El propósito de esta aplicación es implementar una Pokédex web moderna utilizando Angular, aplicando conceptos de:
-
-- Sistemas distribuidos
-- Consumo de APIs REST
-- Despliegue en la nube
-- Seguridad web
-- Integración y despliegue continuo
-
----
-
-# Funcionalidades Implementadas
-
-La aplicación cuenta con las siguientes funcionalidades:
-
-- Visualización dinámica de Pokémon
-- Búsqueda en tiempo real
-- Filtros interactivos
-- Navegación SPA
-- Diseño responsive
-- Consumo de PokéAPI
-- Despliegue automático con GitHub Actions
-
----
-
-# Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - Angular
 - TypeScript
 - HTML5
 - CSS3
-- Azure Static Web Apps
-- GitHub Actions
 - PokéAPI
-- GitHub
+- GitHub Actions
+- Azure Static Web Apps
+
+---
+
+# Funcionalidades de la Aplicación
+
+- Visualización de Pokémon
+- Filtros dinámicos
+- Búsqueda en tiempo real
+- Navegación SPA
+- Consumo de API REST
+- Diseño responsive
 
 ---
 
 # Evidencia del Repositorio
 
-La siguiente captura muestra el repositorio principal utilizado para el desarrollo del proyecto.
+La siguiente imagen muestra el repositorio principal del proyecto en GitHub.
 
-![Repositorio GitHub](./sistemas-distribuidos/poke-dex-lab/source/pokedex-angular/docs/github-repository.png)
+![Repositorio GitHub](sistemas-distribuidos/poke-dex-lab/source/pokedex-angular/docs/github-repository.png)
 
 ---
 
 # Historial de Versiones y Commits
 
-Durante el desarrollo se realizaron múltiples commits para evidenciar el progreso del proyecto y la implementación gradual de funcionalidades.
+El proyecto cuenta con múltiples commits realizados durante el desarrollo, demostrando el avance y evolución de la aplicación.
 
-Entre los cambios más importantes se encuentran:
+Entre los cambios realizados se encuentran:
 
-- Configuración inicial del proyecto Angular
-- Implementación de componentes
-- Integración con PokéAPI
-- Configuración de Azure Static Web Apps
+- Configuración del pipeline
 - Corrección de rutas SPA
-- Implementación de headers de seguridad
-- Ajustes visuales y optimización
+- Configuración de seguridad
+- Optimización de estilos
+- Actualización del README
 
-![Historial de Commits](./sistemas-distribuidos/poke-dex-lab/source/pokedex-angular/docs/github-commits.png)
+![Historial de Commits](sistemas-distribuidos/poke-dex-lab/source/pokedex-angular/docs/github-commits.png)
 
 ---
 
-# Desarrollo de la Aplicación
+# Desarrollo del Proyecto
 
 ## Componentes Desarrollados
 
-La estructura de la aplicación se organizó utilizando componentes reutilizables:
-
-- Navbar principal
-- Sidebar de filtros
+- Barra de navegación
+- Barra lateral de filtros
 - Tarjetas de Pokémon
 - Buscador dinámico
 - Sistema de ordenamiento
-- Vista responsive
+
+---
+
+# Aplicación en Funcionamiento
+
+La siguiente evidencia muestra la aplicación ejecutándose correctamente después del despliegue.
+
+![Aplicación Funcionando](sistemas-distribuidos/poke-dex-lab/source/pokedex-angular/docs/app-running.png)
 
 ---
 
 # Despliegue en Azure Static Web Apps
 
-La aplicación fue desplegada utilizando Azure Static Web Apps conectado directamente al repositorio de GitHub.
+## Creación del Recurso
 
-Durante la configuración se establecieron:
+La aplicación fue desplegada utilizando Azure Static Web Apps con integración directa a GitHub.
 
+Se configuró:
+
+- Repositorio GitHub
 - Rama principal
 - Pipeline CI/CD
+- Variables de compilación
 - Ruta del proyecto Angular
-- Configuración de compilación
-- Variables necesarias para el despliegue
 
 ---
 
 # Evidencia de Azure Static Web Apps
 
-La siguiente imagen muestra la configuración y despliegue de la aplicación en Azure.
+La siguiente imagen muestra el recurso creado en Azure.
 
-![Azure Static Web Apps](./sistemas-distribuidos/poke-dex-lab/source/pokedex-angular/docs/azure-static-web-apps.png)
+![Azure Static Web Apps](sistemas-distribuidos/poke-dex-lab/source/pokedex-angular/docs/azure-static-web-apps.png)
 
 ---
 
-# Configuración de GitHub Actions
+# Configuración del flujo de trabajo de GitHub Actions
 
-Azure generó automáticamente el flujo de trabajo para realizar despliegues automáticos cada vez que se realiza un push al repositorio.
+Azure generó automáticamente un flujo de trabajo para el despliegue continuo de la aplicación.
 
-Inicialmente se presentaron errores porque Azure intentaba compilar desde la raíz del repositorio.
+Inicialmente el despliegue fallaba porque Azure buscaba el proyecto en la raíz del repositorio.  
+Posteriormente se corrigió la ruta del proyecto Angular dentro del workflow.
 
-El problema fue solucionado configurando correctamente la ruta:
+![GitHub Actions](sistemas-distribuidos/poke-dex-lab/source/pokedex-angular/docs/github-actions-workflow.png)
 
-```yaml
-app_location: "sistemas-distribuidos/poke-dex-lab/source/pokedex-angular"
+---
+
+# Configuración de Seguridad
+
+Se implementaron encabezados de seguridad HTTP para mejorar la protección de la aplicación desplegada.
+
+Entre las configuraciones aplicadas se encuentran:
+
+- Content Security Policy
+- X-Frame-Options
+- X-Content-Type-Options
+- Referrer-Policy
+- Permissions-Policy
+
+![Configuración de Seguridad](sistemas-distribuidos/poke-dex-lab/source/pokedex-angular/docs/securityheaders-azure.png)
+
+---
+
+# Conclusiones
+
+Durante el desarrollo del proyecto se aplicaron conceptos relacionados con:
+
+- Desarrollo SPA con Angular
+- Consumo de APIs REST
+- Automatización CI/CD
+- Despliegue en la nube
+- Configuración de seguridad web
+- Administración de repositorios GitHub
+
+El proyecto permitió fortalecer conocimientos prácticos en desarrollo frontend moderno y despliegue continuo utilizando herramientas profesionales.
