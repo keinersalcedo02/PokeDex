@@ -2,7 +2,7 @@
 
 Aplicación web desarrollada en Angular que consume datos de Pokémon usando PokéAPI.
 
-El proyecto fue desplegado en Azure Static Web Apps con integración continua usando GitHub y GitHub Actions.
+El proyecto fue desplegado en Azure Static Web Apps utilizando integración continua con GitHub y GitHub Actions.
 
 ---
 
@@ -13,7 +13,7 @@ El proyecto fue desplegado en Azure Static Web Apps con integración continua us
 - API consumida: PokéAPI
 - Despliegue: Azure Static Web Apps
 - Control de versiones: GitHub
-- CI/CD: GitHub Actions
+- Integración continua: GitHub Actions
 
 ---
 
@@ -32,7 +32,7 @@ El proyecto fue desplegado en Azure Static Web Apps con integración continua us
 
 La siguiente imagen muestra el repositorio principal del proyecto en GitHub.
 
-![Repositorio GitHub](sistemas-distribuidos/poke-dex-lab/source/pokedex-angular/docs/repositorio-github.png)
+![Repositorio GitHub](sistemas-distribuidos/poke-dex-lab/source/pokedex-angular/docs/github-repository.png)
 
 ---
 
@@ -82,7 +82,7 @@ Se configuró:
 
 # Evidencia de Azure Static Web Apps
 
-![Aplicaciones web estáticas de Azure](sistemas-distribuidos/poke-dex-lab/source/pokedex-angular/docs/aplicaciones%20web%20estáticas%20de%20Azure.png)
+![Azure Static Web Apps](sistemas-distribuidos/poke-dex-lab/source/pokedex-angular/docs/azure-static-web-apps.png)
 
 ---
 
